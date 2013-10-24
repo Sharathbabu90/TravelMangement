@@ -1,0 +1,890 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Employee.aspx.cs" Inherits="Employee" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+
+    <style type="text/css">
+        .style4
+        {
+            font-weight: bold;
+            background-color: #FF9933;
+        }
+        .style5
+        {
+        background-color: #FFFFFF;
+            text-align: right;
+        }
+        .style7
+        {
+            background-color: #FFFFFF;
+            height: 23px;
+        }
+        .style9
+        {
+            background-color: #FFFFFF;
+            font-weight: bold;
+            width: 299px;
+        }
+        .style10
+        {
+            font-weight: bold;
+        }
+        .style31
+        {
+            font-weight: bold;
+            background-color: #FF9933;
+            width: 299px;
+        }
+        .style32
+        {
+            background-color: #FFFFFF;
+            height: 23px;
+            width: 299px;
+        }
+        .style33
+        {
+            background-color: #FFFFFF;
+            width: 299px;
+        }
+        .style34
+        {
+            font-weight: bold;
+            background-color: #FF9933;
+            width: 75px;
+        }
+        .style35
+        {
+            background-color: #FFFFFF;
+            height: 23px;
+            width: 75px;
+        }
+        .style36
+        {
+            background-color: #FFFFFF;
+            width: 75px;
+        }
+        .style37
+        {
+            font-weight: bold;
+            background-color: #FF9933;
+            width: 99px;
+        }
+        .style38
+        {
+            background-color: #FF9933;
+            height: 23px;
+            width: 140px;
+        }
+        .style40
+        {
+            background-color: #FFFFFF;
+            height: 23px;
+            width: 99px;
+        }
+        .style41
+        {
+            background-color: #FFFFFF;
+            width: 99px;
+        }
+        .style63
+        {
+            background-color: #FFFFFF;
+            text-align: center;
+        }
+        .style79
+        {
+            font-weight: bold;
+            background-color: #FF9933;
+            width: 101px;
+        }
+        .style80
+        {
+            background-color: #FFFFFF;
+            height: 23px;
+            width: 101px;
+        }
+        .style81
+        {
+            background-color: #FFFFFF;
+            text-align: center;
+            width: 101px;
+        }
+        .style82
+        {
+            font-weight: bold;
+            width: 101px;
+        }
+        .style83
+        {
+            background-color: #FFFFFF;
+            text-align: right;
+            width: 101px;
+        }
+        .style91
+        {
+    }
+        .style94
+        {
+            text-align: center;
+        }
+        .style97
+        {
+            background-color: #FFFFFF;
+            text-align: center;
+            width: 223px;
+        }
+        .style98
+        {
+            background-color: #FFFFFF;
+            text-align: right;
+            width: 223px;
+        }
+        .style102
+        {
+            background-color: #FFFFFF;
+            text-align: center;
+            width: 244px;
+        }
+        .style103
+        {
+            background-color: #FFFFFF;
+            text-align: right;
+            width: 244px;
+        }
+        .style104
+        {
+            font-weight: bold;
+            background-color: #FF9933;
+            width: 244px;
+        }
+        .style105
+        {
+            background-color: #FFFFFF;
+            height: 23px;
+            width: 244px;
+        }
+        .style106
+        {
+            font-weight: bold;
+            background-color: #FF9933;
+            width: 223px;
+        }
+        .style107
+        {
+            background-color: #FFFFFF;
+            height: 23px;
+            width: 223px;
+        }
+        .style108
+        {
+            font-weight: bold;
+            background-color: #FF9933;
+            width: 233px;
+        }
+        .style109
+        {
+            background-color: #FFFFFF;
+            height: 23px;
+            width: 233px;
+        }
+        .style110
+        {
+            background-color: #FFFFFF;
+            text-align: center;
+            width: 233px;
+        }
+        .style111
+        {
+            background-color: #FFFFFF;
+            text-align: right;
+            width: 233px;
+        }
+        .style112
+        {
+            text-align: center;
+            font-weight: bold;
+            background-color: #FFCC66;
+        }
+        .style115
+    {
+        width: 65px;
+    }
+    .style116
+    {
+        width: 13px;
+    }
+    .style117
+    {
+        width: 212px;
+    }
+    .style118
+    {
+        width: 175px;
+    }
+    .style119
+    {
+        width: 175px;
+        height: 59px;
+    }
+    .style120
+    {
+        width: 13px;
+        height: 59px;
+    }
+    .style121
+    {
+        height: 59px;
+    }
+    .style125
+    {
+        width: 241px;
+        text-align: right;
+    }
+        </style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="MainContent" Runat="Server">
+    <table class="style1">
+        <tr>
+            <td class="style38" colspan="5" bgcolor="#FF9933">
+                <h2 class="style94" style="width: 1263px; margin-bottom: 2px">
+                <strong>&nbsp;&nbsp;&nbsp;&nbsp; Travel Indent</strong></h2>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="style119">
+                </td>
+            <td class="style120">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                &nbsp;</td>
+            <td class="style121">
+                <asp:Label ID="lblsysdatetime" runat="server" style="font-weight: 700" 
+                    Text="Date and Time"></asp:Label>
+                                    </td>
+            <td class="style121">
+                </td>
+            <td class="style121">
+                </td>
+        </tr>
+        
+        <tr>
+            <td class="style118">
+                <asp:Label ID="Label1" runat="server" Text="Travel Indent No" 
+                    style="font-weight: 700"></asp:Label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </td>
+            <td class="style116">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:TextBox ID="TextBox25" runat="server" Width="100px" height="20px"></asp:TextBox>
+                &nbsp;</td>
+            <td class="style91">
+                <asp:Label ID="Label11" runat="server" Text="BU/BE" style="font-weight: 700"></asp:Label>
+            </td>
+            <td class="style91">
+                <asp:DropDownList ID="DropDownList5" runat="server" Width="98px" height="18px">
+                    <asp:ListItem>BU</asp:ListItem>
+                    <asp:ListItem>BE</asp:ListItem>
+                </asp:DropDownList>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+            <td class="style91">
+                </td>
+        </tr>
+        
+        <tr>
+            <td class="style91" colspan="2" rowspan="2">
+                <asp:Label ID="Label12" runat="server" style="font-weight: 700" 
+                    Text="Travel  Purpose"></asp:Label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:DropDownList ID="DropDownList7" runat="server" Width="100px" Height="20px">
+                <asp:ListItem>Projects</asp:ListItem>
+                    <asp:ListItem>Others</asp:ListItem>
+                </asp:DropDownList>
+                                    </td>
+            <td class="style91">
+                <strong>Practice(BU)/CostCentre(SU)</strong></td>
+            <td class="style91">
+                                
+                <asp:TextBox ID="TextBox20" runat="server" Width="100px" 
+                    ReadOnly="True"></asp:TextBox>
+                
+            </td>
+            <td class="style91">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td class="style60">
+                <asp:Label ID="Label13" runat="server" Text="Accomodation" 
+                    style="font-weight: 700"></asp:Label>
+            </td>
+            <td>
+                <asp:DropDownList ID="Acc" runat="server" Width="100px" height="20px">
+                <asp:ListItem>Self</asp:ListItem>
+                <asp:ListItem>Hotel</asp:ListItem>
+                <asp:ListItem>Guest House</asp:ListItem>
+                </asp:DropDownList>
+                
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                
+            </td>
+            <td class="style3">
+                </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <table class="style1" style="width: 93%">
+                    <tr>
+                        <td class="style125">
+                            Project Ref</td>
+                        <td>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:TextBox 
+                                ID="TextBox26" runat="server" Width="100px" height="20px"></asp:TextBox>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="style125">
+                            Project Manager</td>
+                        <td>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:DropDownList ID="DropDownList9" runat="server" Width="105px">
+                <asp:ListItem>Manjula</asp:ListItem>
+                    <asp:ListItem>Murugesh</asp:ListItem>
+                </asp:DropDownList>
+                
+                                    &nbsp;</td>
+                    </tr>
+                </table>
+                <br />
+                <br />
+&nbsp;&nbsp;&nbsp;
+                </td>
+            <td>
+                <asp:Label ID="Label16" runat="server" Text="Client Name" 
+                    style="font-weight: 700"></asp:Label>
+            </td>
+            <td>
+                <asp:TextBox ID="TextBox5" runat="server" Width="100px" height="20px"></asp:TextBox>
+                
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                
+            </td>
+            <td>
+                </td>
+        </tr>
+        <tr>
+            <td class="style118">
+                <asp:Label ID="lblTypeOfTravel0" runat="server" Text="Type Of Travel" 
+                    style="font-weight: 700"></asp:Label>
+            </td>
+            <td class="style116">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:DropDownList ID="DropDownList8" runat="server" Width="100px" 
+                    AutoPostBack="True" Height="20px">
+                <asp:ListItem>Domestic</asp:ListItem>
+                    <asp:ListItem>International</asp:ListItem>
+                </asp:DropDownList>
+                                    </td>
+            <td class="style61">
+                <asp:Label ID="Label17" runat="server" Text="Budget Reference" 
+                    style="font-weight: 700"></asp:Label>
+                </td>
+            <td>
+                <asp:TextBox 
+                    ID="TextBox6" runat="server" Width="100px" Height="20px"></asp:TextBox>
+                
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td class="style25">
+                </td>
+        </tr>
+        <tr>
+            <td class="style118">
+                <asp:Label ID="lblcities" runat="server" Text="City" style="font-weight: 700"></asp:Label>
+            </td>
+            <td class="style116">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:DropDownList ID="dlcity" runat="server" Width="100px" Height="20px">
+                <asp:ListItem>Select City</asp:ListItem>
+                <asp:ListItem>Mumbai</asp:ListItem>
+                <asp:ListItem>Delhi</asp:ListItem>
+                <asp:ListItem>Kolkata</asp:ListItem>
+                <asp:ListItem>Chennia</asp:ListItem>
+                <asp:ListItem>Banglore</asp:ListItem>
+                <asp:ListItem>Hyderabad</asp:ListItem>
+                <asp:ListItem>Chennia</asp:ListItem>
+                </asp:DropDownList>
+                &nbsp;</td>
+            <td class="style61">
+                <strong>Reporting Manager</strong></td>
+            <td>
+                                
+                <asp:TextBox ID="TextBox15" runat="server" Width="100px" 
+                    ReadOnly="True"></asp:TextBox>
+                
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                
+                                    &nbsp;</td>
+            <td class="style25">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td class="style55" colspan="2">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&nbsp;</strong><table class="style1">
+                    <tr>
+                        <td class="style117">
+                            &nbsp;</td>
+                        <td class="style115">
+                            From</td>
+                        <td colspan="2">
+                            <asp:TextBox ID="TextBox11" runat="server" Width="100px"></asp:TextBox>
+                            Start Time<asp:TextBox ID="TextBox22" runat="server" Width="100px" 
+                    ReadOnly="True"></asp:TextBox>
+                
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="style117">
+                            <strong>Period</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="style117">
+                            &nbsp;</td>
+                        <td colspan="2">
+                            To</td>
+                        <td>
+                            <asp:TextBox ID="TextBox23" runat="server" Width="100px"></asp:TextBox>
+                            End Time<asp:TextBox ID="TextBox24" runat="server" Width="100px" 
+                    ReadOnly="True"></asp:TextBox>
+                
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <asp:Label ID="Label30" runat="server" style="font-weight: 700" Text="IPB No"></asp:Label>
+            </td>
+            <td class="style44">
+                                
+                <asp:TextBox ID="TextBox13" runat="server" Width="100px" 
+                    ReadOnly="True"></asp:TextBox>
+                
+            </td>
+            <td>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                
+                                    &nbsp;<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                
+                </td>
+            <td class="style43">
+                </td>
+        </tr>
+        
+        <tr>
+            <td class="style118">
+                &nbsp;</td>
+            <td class="style116">
+                <b></b>
+            </td>
+            <td>
+                <b>Advance Voucher No</b></td>
+            <td class="style44">
+                                
+                <asp:TextBox ID="TextBox19" runat="server" Width="100px" 
+                    ReadOnly="True"></asp:TextBox>
+                
+            </td>
+            <td>
+                &nbsp;</td>
+            <td class="style43">
+                &nbsp;</td>
+        </tr>
+        
+        <tr>
+            <td class="style10" colspan="2" rowspan="5">
+                &nbsp;<fieldset style="width:500px">
+                    <legend><b>Location</b></legend>
+                    <asp:Label ID="Label10" runat="server" Font-Size="Small" 
+                        style="font-size: small;" Text="Leaving From"></asp:Label>
+                    &nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="txtTravelFromm" runat="server" Width="100px" 
+                        Height="18px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator18" Runat="server" 
+                        ControlToValidate="txtTravelFromm" ForeColor="Red" Text="*" 
+                        ToolTip="Please Enter the value" />
+                    &nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;<asp:Label ID="lblModeOfTravel0" runat="server" Font-Size="Small" 
+                        Text="Mode Of Travel"></asp:Label>
+                    &nbsp;<asp:DropDownList ID="DropDownList10" runat="server" Width="105px" 
+                        Height="22px">
+                        <asp:ListItem>Bus</asp:ListItem>
+                        <asp:ListItem>Train</asp:ListItem>
+                        <asp:ListItem>Airlines</asp:ListItem>
+                    </asp:DropDownList>
+                    &nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator19" Runat="server" 
+                        ControlToValidate="DropDownList10" ForeColor="Red" Text="*" 
+                        ToolTip="Please Enter the value" />
+                    <br />
+                    <br />
+                    <asp:Label ID="Label2" runat="server" Font-Size="Small" Text="Going To"></asp:Label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:TextBox ID="txtTravelTo0" runat="server" Width="100px" Height="18px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator20" Runat="server" 
+                        ControlToValidate="txtTravelTo0" ForeColor="Red" Text="*" />
+                    <br />
+                    <br />
+                    <asp:Label ID="Label3" runat="server" Font-Size="Small" Text="Date Of Travel"></asp:Label>
+&nbsp;&nbsp;
+                    <asp:TextBox ID="TextBox3" runat="server" Height="18px" Width="100px"></asp:TextBox>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Button ID="Button5" runat="server" Font-Size="Small" 
+                        style="font-weight: 700" Text="+ Add City" width="108px" />
+                </fieldset>&nbsp;               
+                <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                
+                &nbsp;
+                
+            </td>
+            <td class="style62">
+                &nbsp;</td>
+            <td>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                
+                </td>
+            <td class="style43">
+                &nbsp;</td>
+        </tr>
+        
+        <tr>
+            <td class="style62">
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+            <td class="style43">
+                &nbsp;</td>
+        </tr>
+        
+        <tr>
+            <td class="style62" colspan="2">
+                                
+                <asp:Label ID="Label7" runat="server" style="font-weight: 700; background-color: #CCFFFF;" 
+                    
+                    Text="Caution: Please apply prior to 7 days for domestic and 15 days for international" 
+                    Font-Size="Medium" Height="44px" Width="350px"></asp:Label>
+                                
+                <br />
+                                
+                <br />
+                <br />
+                <br />
+            </td>
+            <td class="style43">
+                &nbsp;</td>
+        </tr>
+        
+        <tr>
+            <td class="style55">
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+            <td class="style62">
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+            <td class="style43">
+                &nbsp;</td>
+        </tr>
+        
+        <tr>
+            <td class="style55">
+                &nbsp;</td>
+            <td>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+            <td class="style62">
+                &nbsp;</td>
+            <td>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                
+                </td>
+            <td class="style43">
+                &nbsp;</td>
+        </tr>
+        
+        </table>
+    
+    
+    <asp:Label ID="lblAxcendian" runat="server" style="font-weight: 700" 
+        Text="Axcendian comments"></asp:Label>
+    
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+                </td>
+         
+            <td class="style120">
+                &nbsp;&nbsp;<asp:TextBox ID="TetAxcendian" runat="server" 
+        TextMode="MultiLine"></asp:TextBox>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                
+                </td>
+         
+            <td class="style109">
+                &nbsp;</td>
+            <td class="style110">
+                &nbsp;</td>
+            <td>
+                                
+                &nbsp;</td>
+        </tr>
+        <tr>
+         
+            <td class="style39" colspan="2">
+                &nbsp;</td>
+         
+            <td class="style109">
+                &nbsp;</td>
+            <td class="style60">
+                &nbsp;</td>
+            <td>
+                                
+                &nbsp;</td>
+                <td style="text-align: center" class="style106">
+              &nbsp;&nbsp;</td><br />
+&nbsp;<br />
+    <table class="style1">
+        <tr>
+            <td colspan="4" 
+                style="text-align: center; font-weight: 700; background-color: #FF9933">
+                Traveller&#39;s Details</td>
+        </tr>
+        <tr>
+            <td class="style112">
+                Sl no</td>
+            <td class="style112">
+                Emp ID</td>
+            <td class="style112">
+                Emp Name</td>
+            <td class="style112">
+                Grade</td>
+        </tr>
+        <tr>
+            <td class="style94">
+                1</td>
+            <td class="style94">
+                0434</td>
+            <td class="style94">
+                Name</td>
+            <td class="style94">
+                D</td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+        </tr>
+    </table>
+    <br />
+    <td style="text-align: center" class="style106">&nbsp;
+              
+            <tr>
+            <td style="text-align": colspan="5" class="style34"/>
+            <table class="style1" style="text-align: center; width: 112%;">
+        <tr>
+            <td style="text-align: center" class="style106">
+                Sl No</td>
+            <td class="style34">
+                Date</td>
+            <td class="style37">
+                Bus/Train/Air Fare</td>
+            <td class="style4">
+                Auto/Taxi Fare</td>
+            <td class="style104">
+                Boarding/Lodging</td>
+            <td class="style108">
+                Food &amp; Refreshment</td>
+            <td class="style4">
+                Others(Add Remarks)</td>
+            <td class="style79">
+                Total Rs.</td>
+            <td class="style31">
+                Remarks</td>
+        </tr>
+        <tr>
+            <td class="style107">
+                1</td>
+            <td class="style35">
+                01/04/2012</td>
+            <td class="style40">
+                2000</td>
+            <td class="style7">
+                150</td>
+            <td class="style105">
+                2500</td>
+            <td class="style109">
+                200</td>
+            <td class="style7">
+                450</td>
+            <td class="style80">
+                3500</td>
+            <td class="style32">
+                Amount spent on additional expenses</td>
+        </tr>
+        <tr>
+            <td class="style97">
+                2</td>
+            <td class="style36">
+                02/04/2012</td>
+            <td class="style41">
+                2300</td>
+            <td class="style63">
+                500</td>
+            <td class="style102">
+                2500</td>
+            <td class="style110">
+                200</td>
+            <td class="style63">
+                650</td>
+            <td class="style81">
+                5700</td>
+            <td class="style33">
+                Amount spent on additional expenses</td>
+        </tr>
+        <tr>
+            <td class="style97">
+                3</td>
+            <td class="style36">
+                03/04/2012</td>
+            <td class="style41">
+                3400</td>
+            <td class="style63">
+                700</td>
+            <td class="style102">
+                2500</td>
+            <td class="style110">
+                200</td>
+            <td class="style63">
+                700</td>
+            <td class="style81">
+                7100</td>
+            <td class="style33">
+                Amount spent on additional expenses</td>
+        </tr>
+        <tr>
+            <td class="style97">
+                4</td>
+            <td class="style36">
+                04/04/2012</td>
+            <td class="style41">
+                1200</td>
+            <td class="style63">
+                800</td>
+            <td class="style102">
+                2500</td>
+            <td class="style110">
+                200</td>
+            <td class="style63">
+                800</td>
+            <td class="style81">
+                8900</td>
+            <td class="style33">
+                Amount spent on additional expenses</td>
+            
+        </tr>
+        
+        <tr>
+            <td class="style98">
+                &nbsp;</td>
+            <td class="style36">
+                &nbsp;</td>
+            <td class="style41">
+                &nbsp;</td>
+            <td class="style5">
+                &nbsp;</td>
+            <td class="style10" colspan="3">
+                Total Advance Requested</td>
+            <td class="style82">
+                15000</td>
+            <td class="style9">
+                &nbsp;</td>
+            
+        </tr>
+        <tr>
+            <td class="style98">
+                &nbsp;</td>
+            <td class="style36">
+                &nbsp;</td>
+            <td class="style41">
+                &nbsp;</td>
+            <td class="style5">
+                &nbsp;</td>
+            <td class="style10" colspan="3">
+                 Advance Given by Axcend</td>
+            <td class="style82">
+                                </td>
+            <td class="style9">
+                &nbsp;</td>
+            
+        </tr>
+       
+        
+        <tr>
+            <td class="style98">
+                &nbsp;</td>
+            <td class="style36">
+                &nbsp;</td>
+            <td class="style41">
+                &nbsp;</td>
+            <td class="style5">
+                &nbsp;</td>
+            <td class="style10" colspan="3">
+                Total Approximate Budget</td>
+            <td class="style82">
+                34000&nbsp;</td>
+            <td class="style9">
+                &nbsp;</td>
+            
+        </tr>
+        
+        <tr>
+            <td class="style98">
+                &nbsp;</td>
+            
+                        <td class="style41">
+                            &nbsp;</td>
+            <td class="style5">
+                &nbsp;</td>
+            <td class="style103">
+                <asp:Button ID="Button1" runat="server" Text="Submit" 
+                    style="font-weight: 700" />
+            &nbsp;&nbsp;&nbsp;
+                </td>
+            <td class="style5">
+                <asp:Button ID="Button2" runat="server" Text="Cancel" 
+                    style="font-weight: 700; text-align: center;" />
+            </td>
+            <td class="style111">
+                &nbsp;</td>
+            <td class="style83">
+                &nbsp;</td>
+            <td class="style33">
+                &nbsp;</td>
+            
+        </tr>
+        
+    
+</asp:Content>
+
